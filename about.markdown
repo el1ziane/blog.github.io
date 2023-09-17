@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Sobre
-permalink: /about/
+permalink: /[Link Quebrado](http://dddasdd1.com/link_invalido)/
 ---
 
 
