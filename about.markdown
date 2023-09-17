@@ -4,7 +4,7 @@ title: Sobre
 permalink: /about/
 ---
 
-[Link Quebrado](http://exemplo.com/link_invalido)
+[Link Quebrado](http://dddasdd1.com/link_invalido)
 
 
 Bem-Vindos ao Nosso Mundo Literário!
