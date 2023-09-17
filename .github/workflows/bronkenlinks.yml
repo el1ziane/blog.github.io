@@ -33,4 +33,6 @@ jobs:
         run: gem install html-proofer
 
       - name: Check Broken Links
-        run: htmlproofer ./_site --url-ignore '^\/assets\/*' --only-4xx --check-html --external_only
+        run: |
+         htmlproofer ./_site --only-4xx --check-html --external_only | \
+         grep -Ev '/assets/'
