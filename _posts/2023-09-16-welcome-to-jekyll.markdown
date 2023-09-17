@@ -1,29 +1,9 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2023-09-16 22:17:08 -0300
+title:  "A guerra do velho"
+date:   2023-09-16 20:07:45 -0300
 categories: jekyll update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+Um livro de ficção cientifica muito divertido. 👾📖
 
-Jekyll requires blog post files to be named according to the following format:
-
-`YEAR-MONTH-DAY-title.MARKUP`
-
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+"A Guerra do Velho" é um romance de ficção científica escrito por John Scalzi. A obra apresenta um futuro distópico no qual a humanidade enfrenta uma guerra intergaláctica contra uma raça alienígena chamada Consu. O livro segue as experiências do protagonista John Perry, um homem idoso que se voluntaria para ingressar nas Forças Coloniais de Defesa para lutar contra os Consu, ganhando um corpo rejuvenescido no processo. A narrativa é repleta de ação, humor e questões morais, explorando temas como a mortalidade, a guerra e a identidade em um cenário futurista intrigante. "A Guerra do Velho" é uma leitura envolvente que cativa os fãs de ficção científica com sua trama inteligente e personagens carismáticos.

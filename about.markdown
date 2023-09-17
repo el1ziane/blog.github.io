@@ -1,18 +1,9 @@
 ---
 layout: page
-title: About
+title: Sobre
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Bem-Vindos ao Nosso Mundo Literário!
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+Seja bem-vindo(a) ao nosso cantinho literário, um refúgio para amantes de livros de todas as idades e gostos. Aqui, a magia da leitura ganha vida e se transforma em palavras escritas que compartilhamos com paixão.
