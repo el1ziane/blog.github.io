@@ -5,7 +5,6 @@ date:   2023-09-16 20:07:45 -0300
 categories: jekyll update
 ---
 
-[Link Quebrado](http://dddasdd1.com/link_invalido)
 
 Um livro de ficção cientifica muito divertido. 👾📖
 
