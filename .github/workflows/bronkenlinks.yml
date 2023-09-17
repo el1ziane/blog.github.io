@@ -1,0 +1,36 @@
+name: Check Broken Links
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1' 
+
+      - name: Install Bundler
+        run: gem install bundler
+        env:
+          BUNDLE_USER: $GITHUB_ACTIONS
+
+      - name: Install Jekyll Dependencies
+        run: bundle install
+
+      - name: Build Jekyll Site
+        run: bundle exec jekyll build
+
+      - name: Install html-proofer
+        run: gem install html-proofer
+
+      - name: Check Broken Links
+        run: htmlproofer ./_site --url-ignore '/^\/assets\//' --only-4xx --check-html --external_only
