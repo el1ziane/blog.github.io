@@ -28,7 +28,7 @@ url: "https://el1ziane.github.io/" # the base hostname & protocol for your site,
 github_username:  el1ziane
 
 # Build settings
-theme: jekyll-theme-clean-blog
+remote_theme: StartBootstrap/startbootstrap-clean-blog-jekyll
 plugins:
   - jekyll-feed
 
