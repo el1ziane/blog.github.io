@@ -2,7 +2,7 @@
 layout: post
 title:  "A casa dos muitos caminhos"
 date:   2023-09-18 21:41:45 -0300
-description: "A Casa dos Muitos Caminhos" Uma Jornada Mágica na Literatura
+description: A Casa dos Muitos Caminhos, Uma Jornada Mágica na Literatura
 categories: jekyll update
 ---
 
