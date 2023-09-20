@@ -1,10 +1,20 @@
-# Universo das Páginas um blog utilizando Jekyll
+# [Universo das Páginas](https://el1ziane.github.io/) - um blog utilizando Jekyll, GitHub Actions e GitHub Pages
 [![Deploy Jekyll site to Pages](https://github.com/el1ziane/el1ziane.github.io/actions/workflows/jekyll.yml/badge.svg)](https://github.com/el1ziane/el1ziane.github.io/actions/workflows/jekyll.yml)
+[![GitHub Actions Demo](https://github.com/el1ziane/el1ziane.github.io/actions/workflows/github-actions-demo.yml/badge.svg)](https://github.com/el1ziane/el1ziane.github.io/actions/workflows/github-actions-demo.yml)
+[![pages-build-deployment](https://github.com/el1ziane/el1ziane.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/el1ziane/el1ziane.github.io/actions/workflows/pages/pages-build-deployment)
+[![Check Broken Links](https://github.com/el1ziane/el1ziane.github.io/actions/workflows/check-links.yml/badge.svg)](https://github.com/el1ziane/el1ziane.github.io/actions/workflows/check-links.yml)
 
-## Sobre o trabalho:
+### 🛠 Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+- [Ruby 3.1.4](https://www.ruby-lang.org/en/downloads/)
+- [Jekyll](https://jekyllrb.com/docs/)
+
+## 📌 Sobre o trabalho:
 Para este trabalho foi utilizada a jamstack jekyll, com o objetivo de criar um site estático, como um blog, e adotar os principios de gerência de configuração para implementa-lo.
 
-## Criação e clonagem do repositório:
+## 🏗️ Criação e clonagem do repositório:
 Este repósitorio foi criado utilizando o inicio rápido do github pages, que consiste em utilizar o domínio `.github.io` após o nome de usuário.
 ![img0](https://github.com/el1ziane/el1ziane.github.io/assets/113150368/98997dd1-0a24-455e-9b14-e41084f2354e)
 
@@ -32,7 +42,7 @@ code .
 ```
 Agora é só desenvolver a estrutura inicial do site.
 
-## GitHub Actions:
+## 📌 GitHub Actions:
 
 O GitHub Actions é uma plataforma de automação de fluxos de trabalho integrada ao GitHub, permitindo automatizar tarefas como construir, testar e implantar código.
 Os fluxos de trabalho são executados através de máquinas virtuais.
@@ -55,16 +65,49 @@ Neste repositório estão presente os seguintes fluxos de trabalho:
 
 ![image](https://github.com/el1ziane/el1ziane.github.io/assets/113150368/7960e97e-2bb0-4fa1-aa39-4faf2d935a2e)
 
-Como é possível observar a baixo, o fluxo de trabalho do Jekyll Constroi e implanta automaticamente, de acordo com o cumprimento dos padrões pré estabelecidos:
+Como é possível observar a baixo, o fluxo de trabalho do Jekyll Constroi e implanta automaticamente o site, de acordo com o cumprimento dos padrões pré estabelecidos:
+
+![Captura de tela 2023-09-17 103643](https://github.com/el1ziane/el1ziane.github.io/assets/113150368/e96d3da4-f035-4a26-93e2-7627df76c645)
 
 ![Captura de tela 2023-09-18 224042](https://github.com/el1ziane/el1ziane.github.io/assets/113150368/e7eb088c-a4b4-4787-ba2f-0fffdfbf1080)
 
 ![Captura de tela 2023-09-18 231006](https://github.com/el1ziane/el1ziane.github.io/assets/113150368/b5b9e2d1-708c-45a3-b311-981e8be79aa1)
 
+## ✅ **Ferramentas de verificação de qualidade de código: ESLint**
 
-## Desafios:
+Instalando a extensão:
 
-**Arquivo de configuração** `.gitignore`:
+![Captura de tela 2023-09-17 093955](https://github.com/el1ziane/el1ziane.github.io/assets/113150368/fb0bfb4b-8882-47ae-8540-f22e6ccaffe6)
+
+Realizando a configuração em: `⚙️settings`, pesquisando por ```“editor.codeActionsOnSave”```:
+
+![Captura de tela 2023-09-20 173427](https://github.com/el1ziane/el1ziane.github.io/assets/113150368/25dfbe04-81b4-482d-b21c-2b4ff081cb82)
+
+Realizando a instalação no projeto:
+
+No terminal será necessário digitar:
+
+```
+npm install eslint --save-dev
+```
+E depois:
+
+```
+npx eslint –-init
+```
+E em seguida selecionar as opções para uso.
+
+Pacotes intalados no projeto!
+
+![Captura de tela 2023-09-20 184608](https://github.com/el1ziane/el1ziane.github.io/assets/113150368/f0d2829f-28ad-40b9-a40d-8bed4efe75a4)
+
+Agora será possivel obter feedback imedianto dos problemas no código:
+
+![Captura de tela 2023-09-20 183311](https://github.com/el1ziane/el1ziane.github.io/assets/113150368/0d6e167e-a3e3-4c25-aa2c-cf1ac4e87fa6)
+
+## 🚀 Desafios
+
+### **Arquivo de configuração** `.gitignore`:
 Por estar utilizando Jekyll com `bundler`, foi necessário seguir a documentação do Jekyll e adicionar os seguintes arquivos ao `.gitignore`:
 ```
 _site
@@ -76,7 +119,7 @@ vendor
 ```
 ###### Obs: a documentação citada pode ser encontrada [aqui.](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/)
 
-**Branch Protegida**
+### **Branch Protegida**
 
 ![img2](https://github.com/el1ziane/el1ziane.github.io/assets/113150368/675dbb95-c5e5-4fa4-b034-552f8475961f)
 
@@ -94,7 +137,7 @@ remote: Bypassed rule violations for refs/heads/main:
 ```
 A mensagem indica que esse push violou alguma das regras de proteção configuradas para o branch. No entanto, o Git permitiu o contorno dessas regras. Isso geralmente acontece quando o autor do push tem permissões especiais, como acesso de administrador ou proprietário do repositório.
 
-**Configuração de Badge**
+### **Configuração de Badge**
 
 Criando uma badge de status. Como é possível ver, ao selecionar o fluxo de trabalho basta copiar o link, observe que neste fluxo ocorre um erro no build e no deploy.
 
@@ -104,7 +147,7 @@ Após realizar as correções necessárias o status é atualizado automaticament
 
 ![Captura de tela 2023-09-18 232035](https://github.com/el1ziane/el1ziane.github.io/assets/113150368/4eaf0f8f-903f-46be-8b99-a9f6c11babec)
 
-**Rebase Interativo**
+### **Rebase Interativo**
 
 Utilizando o `Git log ` do Git para explorar o histórico do repositório:
 
@@ -131,14 +174,6 @@ Após o rebase é possivel observar que dois commits foram convertidos em 1 e qu
 ![Captura de tela 2023-09-17 151244](https://github.com/el1ziane/el1ziane.github.io/assets/113150368/777e4650-a0e2-4b76-ad7c-7dc3ad64cd61)
 
 
-![Captura de tela 2023-09-17 122513](https://github.com/el1ziane/el1ziane.github.io/assets/113150368/4edfb6a7-1f70-4666-b73b-a38f07b92153)
-
-![Captura de tela 2023-09-17 103643](https://github.com/el1ziane/el1ziane.github.io/assets/113150368/e96d3da4-f035-4a26-93e2-7627df76c645)
-
-![Captura de tela 2023-09-17 103643](https://github.com/el1ziane/el1ziane.github.io/assets/113150368/1ddd3220-c635-462c-a224-196dbbb234d8)
 
 
-![Captura de tela 2023-09-17 095553](https://github.com/el1ziane/el1ziane.github.io/assets/113150368/fa877775-ca73-4274-8cea-b500591af383)
-![Captura de tela 2023-09-17 095619](https://github.com/el1ziane/el1ziane.github.io/assets/113150368/98221c90-4bea-4f74-bedf-3c449d2e274d)
-![Captura de tela 2023-09-17 095849](https://github.com/el1ziane/el1ziane.github.io/assets/113150368/f613c9d0-5606-4724-bd4a-0df427fcdb06)
-![Captura de tela 2023-09-17 100014](https://github.com/el1ziane/el1ziane.github.io/assets/113150368/5a924df9-8645-41c9-af0c-b9715a8dfeb2)
+
