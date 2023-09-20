@@ -51,6 +51,17 @@ Os fluxos de trabalho são executados através de máquinas virtuais.
 
 **Implantação Automática**: Configurar o ambiente de implantação, que pode ser um servidor de hospedagem, como o GitHub Pages. Dentro do ambiente de implantação, utiliza-se uma ação para implantar o site. Essa ação pode enviar os arquivos gerados durante a construção para o servidor do GitHub Pages.
 
+Neste repositório estão presente os seguintes fluxos de trabalho:
+
+![image](https://github.com/el1ziane/el1ziane.github.io/assets/113150368/7960e97e-2bb0-4fa1-aa39-4faf2d935a2e)
+
+Como é possível observar a baixo, o fluxo de trabalho do Jekyll Constroi e implanta automaticamente, de acordo com o cumprimento dos padrões pré estabelecidos:
+
+![Captura de tela 2023-09-18 224042](https://github.com/el1ziane/el1ziane.github.io/assets/113150368/e7eb088c-a4b4-4787-ba2f-0fffdfbf1080)
+
+![Captura de tela 2023-09-18 231006](https://github.com/el1ziane/el1ziane.github.io/assets/113150368/b5b9e2d1-708c-45a3-b311-981e8be79aa1)
+
+
 ## Desafios:
 
 **Arquivo de configuração** `.gitignore`:
@@ -85,3 +96,49 @@ A mensagem indica que esse push violou alguma das regras de proteção configura
 
 **Configuração de Badge**
 
+Criando uma badge de status. Como é possível ver, ao selecionar o fluxo de trabalho basta copiar o link, observe que neste fluxo ocorre um erro no build e no deploy.
+
+![Captura de tela 2023-09-18 231208](https://github.com/el1ziane/el1ziane.github.io/assets/113150368/d2328ac5-01d9-42c7-b4f8-a423e89f51dc)
+
+Após realizar as correções necessárias o status é atualizado automaticamente no `README.md`:
+
+![Captura de tela 2023-09-18 232035](https://github.com/el1ziane/el1ziane.github.io/assets/113150368/4eaf0f8f-903f-46be-8b99-a9f6c11babec)
+
+**Rebase Interativo**
+
+Utilizando o `Git log ` do Git para explorar o histórico do repositório:
+
+![Captura de tela 2023-09-17 143245](https://github.com/el1ziane/el1ziane.github.io/assets/113150368/0526825f-dabf-4c1e-add3-a266e8460fab)
+
+Especificando o intervalo de commits a serem modificados. Nesse caso, para modificar qualquer um dos últimos 3 commits:
+
+```
+git rebase --interactive HEAD~3
+```
+
+![Captura de tela 2023-09-17 144246](https://github.com/el1ziane/el1ziane.github.io/assets/113150368/7f20fe87-3fc6-4d84-9ea6-f73faafecc4e)
+
+Utilizando `squash` para comprimir dois commits em um e reword para reescrever a mensagem de um commit.
+
+![Captura de tela 2023-09-17 150957](https://github.com/el1ziane/el1ziane.github.io/assets/113150368/53406abb-edaf-4547-86cf-ddaacfb16a92)
+
+Reescrevendo a mensagem do primeiro commit.
+
+Após o rebase é possivel observar que dois commits foram convertidos em 1 e que a mensagem foi reescrita:
+
+![Captura de tela 2023-09-17 151055](https://github.com/el1ziane/el1ziane.github.io/assets/113150368/92023fad-957d-47dc-8944-427eae173d50)
+
+![Captura de tela 2023-09-17 151244](https://github.com/el1ziane/el1ziane.github.io/assets/113150368/777e4650-a0e2-4b76-ad7c-7dc3ad64cd61)
+
+
+![Captura de tela 2023-09-17 122513](https://github.com/el1ziane/el1ziane.github.io/assets/113150368/4edfb6a7-1f70-4666-b73b-a38f07b92153)
+
+![Captura de tela 2023-09-17 103643](https://github.com/el1ziane/el1ziane.github.io/assets/113150368/e96d3da4-f035-4a26-93e2-7627df76c645)
+
+![Captura de tela 2023-09-17 103643](https://github.com/el1ziane/el1ziane.github.io/assets/113150368/1ddd3220-c635-462c-a224-196dbbb234d8)
+
+
+![Captura de tela 2023-09-17 095553](https://github.com/el1ziane/el1ziane.github.io/assets/113150368/fa877775-ca73-4274-8cea-b500591af383)
+![Captura de tela 2023-09-17 095619](https://github.com/el1ziane/el1ziane.github.io/assets/113150368/98221c90-4bea-4f74-bedf-3c449d2e274d)
+![Captura de tela 2023-09-17 095849](https://github.com/el1ziane/el1ziane.github.io/assets/113150368/f613c9d0-5606-4724-bd4a-0df427fcdb06)
+![Captura de tela 2023-09-17 100014](https://github.com/el1ziane/el1ziane.github.io/assets/113150368/5a924df9-8645-41c9-af0c-b9715a8dfeb2)
